@@ -1,0 +1,213 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
+
+@font-face{
+    font-family: 'textos'; 
+    src: url('../fonts/starfruit/Starfruit.otf') format('opentype');
+}
+@font-face {
+    font-family: 'titulos';
+    src: url('../fonts/starborn/Starborn.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'sub';
+    src: url('../fonts/chomage/Chomage.ttf') format('truetype');
+}
+
+
+header{
+    width: 100%;
+    background-color: rgb(63, 9, 113);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+}
+footer{
+    padding: 20px;
+    width: 100%;
+    background-color: rgb(38, 6, 68);
+    color: antiquewhite;
+    display: grid;
+    grid-template-areas: 
+    "f1 f2"
+    "f1 f3";
+    gap: 1rem;
+    font-family: 'sub';
+    bottom: 0;
+}
+.nom{
+    grid-area: f1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 2px solid white;
+    padding: 15px;
+    
+}
+.lic{
+    grid-area: f2;
+     display: flex;
+    align-items: center;
+}
+.mat{
+    grid-area: f3;
+     display: flex;
+    align-items: center;
+}
+header .varitas{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 3rem;
+    height: 5rem;
+    margin-left: 10px;
+    filter: drop-shadow(5px 5px 10px rgba(255, 252, 252, 0.9));
+    
+}
+header .c-var{
+    width: 3rem;
+    height: 5rem;
+}
+.bi-list{
+    font-size: 3rem;
+    color:white;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+    color: rgb(38, 8, 69);
+    font-size: 1.5rem;
+    font-family: 'sub';
+}
+li:hover{
+    background-color: pink;
+    width: 100%;
+    padding: 5px 1px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+li{
+    height: 40px;
+}
+.btn{
+    margin: 0;
+    border: 0;
+}
+.dropdown-menu{
+    padding:1rem;
+    gap: 0.5rem;
+    background-color: rgb(203, 159, 216);
+}
+@media (min-width:1024px){
+    li a{
+        color: rgb(248, 222, 245);
+    }
+    a:hover{
+        color: rgb(56, 26, 83);
+    }
+    
+    .dropdown-menu{
+        padding:1rem;
+        gap: 0.5rem;
+        background-color: rgba(0, 0, 0, 0);
+        border: 0;
+        display: flex;
+        gap: 3rem;
+        right: 0;
+        top: -30px;
+    }
+}
+
+
+@keyframes cambio1 {
+    20%{
+        transform: rotateZ(90deg);
+        width: 3rem;
+        height: 5rem;
+    }
+    40%{
+        transform: rotateZ(180deg);
+        width: 2rem;
+        height: 4rem;
+    }
+    60%{
+        transform: rotateZ(270deg);
+        width: 1rem;
+        height: 3rem;
+    }
+    80%{
+        transform: rotateZ(360deg);
+        width: 0rem;
+        height: 0rem;
+    }
+    100%{
+        background-image: url('../imgs/varita2.png');
+        width: 3rem;
+        height: 5rem;
+    }
+}
+@keyframes cambio2 {
+    20%{
+        transform: rotateZ(90deg);
+        background-image: url('../imgs/varita2.png');
+        width: 3rem;
+        height: 5rem;
+    }
+    40%{
+        transform: rotateZ(180deg);
+        background-image: url('../imgs/varita2.png');
+        width: 2rem;
+        height: 4rem;
+    }
+    60%{
+        transform: rotateZ(270deg);
+        background-image: url('../imgs/varita2.png');
+        width: 1rem;
+        height: 3rem;
+    }
+    80%{
+        transform: rotateZ(360deg);
+        background-image: url('../imgs/varita2.png');
+        width: 0rem;
+        height: 0rem;
+    }
+    100%{
+        background-image: url('../imgs/varita3.png');
+        width: 3rem;
+        height: 5rem;
+    }
+}
+@keyframes cambio3 {
+    20%{
+        transform: rotateZ(90deg);
+        background-image: url('../imgs/varita3.png');
+        width: 3rem;
+        height: 5rem;
+    }
+    40%{
+        transform: rotateZ(180deg);
+        background-image: url('../imgs/varita3.png');
+        width: 2rem;
+        height: 4rem;
+    }
+    60%{
+        transform: rotateZ(270deg);
+        background-image: url('../imgs/varita3.png');
+        width: 1rem;
+        height: 3rem;
+    }
+    80%{
+        transform: rotateZ(360deg);
+        background-image: url('../imgs/varita3.png');
+        width: 0rem;
+        height: 0rem;
+    }
+    100%{
+        background-image: url('../imgs/varita.png');
+        width: 3rem;
+        height: 5rem;
+    }
+}
